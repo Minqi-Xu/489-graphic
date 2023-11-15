@@ -1,0 +1,94 @@
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % 
+
+\title{\LARGE \bf Project Proposal}
+
+\author{Minqi Xu, 20845758, m259xu@uwaterloo.ca} % <-this % stops a space
+% \thanks{$^{1}$ X and Y  are with the 
+% School of Computer Science, University of Waterloo,
+% 200 University Avenue, Waterloo, Ontario, Canada N2L 3G1.        {\tt\small }}%
+% }
+
+
+\begin{document}
+\onecolumn
+\maketitle
+%
+% \begin{abstract}
+% \end{abstract}
+%
+
+\section{Topic}
+% \label{sec:intro}
+Generic Algorithm
+
+% Citation examples: \cite{An82,An09,Go89,Ra10}.
+
+
+% \section{Related Work}
+% \label{sec:rw}
+
+% \section{Algorithm Implementation}
+% \label{sec:rw}
+
+% \section{Results and Discussion}
+
+
+
+
+\section{Introduction}
+
+Genetic algorithm is a search and optimization algorithm inspired by 
+the natural selection and genetics. It is commonly used to generate high
+quality solution to optimization and search problems through some bionic
+operations such as mutation, crossover, and selection. \cite{wikiga}. Here,
+mutation introduces small random changes in the offspring's genetic information,
+crossover involves combining genetic information from two individuals to create
+offsprings.
+
+In the algorithm, each generation consists of a population of individuals,
+who contains a fitness score (which is used to demonstrate the ability to
+"complete", or adapt the environment), and each individual represents a point
+in search space and possible solution. In general, the algorithm is in the following
+logic:
+\begin{itemize}
+    \item Individuals in a population compete for resources and mates
+    \item Those who are "fittest" mate to produce more offspring than others
+    \item "Genes" from "fittest" individual propagate throughout the generation, because of this, parents sometimes create offsprings that are better than themselves
+    \item As a result, each generation is better suited to their environment. \cite{gfg}
+\end{itemize}
+
+\section{Connection to the course objectives}
+
+While selecting potentially useful solutions for recombination, a sampling method called
+Stochastic universal sampling (SUS) is introduced. It is an optimal sequential sampling 
+algorithm with no bias, minimal spread, and achieve all N samples in a single tranversal. \cite{bj87} Compared to the Fitness Proportionate
+Selection, SUS performs better when there exists an individual with an extremely large fitness
+compared to others. \cite{wikisus} In Fitness Proportionate Selection (also known as Roulette Wheel
+Selection), the fitness level for individuals (which is used to associate the probability of selection with each
+ individual chromosome) is defined as the fitness of individuals divided by the total fitness of individuals
+ in the generation. \cite{wikifps}
+
+ \section{Application of Generic Algorithm}
+ \begin{itemize}
+    \item Recurrent Neural Network
+    \item Mutation testing
+    \item Code breaking
+    \item Filtering and signal processing
+    \item Learning fuzzy rule base \cite{gfg}
+ \end{itemize}
+
+ \section{Personal Reason for Choosing This Topic}
+ The first time I came across the term Generic Algorithm was in the AI course last semester. My professor showed us
+ an example of it in class. \cite{gaeg1}. I was attracted by the idea behind the algorithm immediately. A few weeks ago,
+ in the lecture of security, the professor mentioned this algorithm again, and also showed us another example about Snake. \cite{gaeg2}
+This algorithm has fascinated me since then. Because this algorithm has randomness, it just meets the requirement of this
+project. So when I saw the requirement, my first thought was to do a project about Genetic Algorithm.
+
+
+\bibliographystyle{IEEEbib}
+\bibliography{template}
+
+\end{document}
+
+
+
